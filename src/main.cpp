@@ -10,9 +10,10 @@
 #define PUBLISH_INTERVAL 1000
 
 /* ================== WiFi / MQTT ================== */
-const char* ssid = "ChinaNet-petershome";
-const char* password = "chenjf8018";
-const char* mqtt_server = "192.168.71.153";
+// Configure these values locally; never commit real network credentials.
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+const char* mqtt_server = "YOUR_MQTT_HOST";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -165,4 +166,3 @@ void loop() {
     processAudio();
     delay(20);
 }
-
